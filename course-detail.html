@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend-разработчик – CodeCraft</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="site-logo">CodeCraft</a>
+            <nav aria-label="Основная навигация">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="courses.html" class="nav-link nav-link--active">Курсы</a></li>
+                    <li><a href="teachers.html" class="nav-link">Преподаватели</a></li>
+                    <li><a href="blog.html" class="nav-link">Блог</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
+        <p style="margin-bottom: var(--space-md); color: var(--color-muted);">
+            <a href="index.html" style="color: inherit;">Главная</a> / 
+            <a href="courses.html" style="color: inherit;">Курсы</a> / 
+            <span>Frontend-разработчик</span>
+        </p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: var(--space-xl); margin-bottom: var(--space-xl);">
+            <div style="flex: 1; min-width: 300px;">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800&auto=format&fit=crop" alt="Frontend разработка" style="border-radius: var(--radius); border: 1px solid var(--color-border);">
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <h1 style="margin-bottom: var(--space-md);">Frontend-разработчик</h1>
+                <p style="font-size: 1.2rem; color: var(--color-muted); margin-bottom: var(--space-lg);">Освойте самую востребованную профессию в IT. Научитесь создавать сайты и веб-приложения с нуля.</p>
+                <p style="font-size: 2rem; font-weight: bold; margin-bottom: var(--space-lg); color: var(--color-primary);">120 000 ₽</p>
+                <button class="btn btn--primary">Записаться на курс</button>
+            </div>
+        </div>
+
+        <h2 style="margin-bottom: var(--space-md);">Программа обучения</h2>
+        <div class="course-details">
+            <details>
+                <summary>Модуль 1. Основы HTML и CSS</summary>
+                <p style="margin-top: var(--space-md); color: var(--color-muted);">Семантическая верстка, Flexbox, CSS Grid, адаптивность, методология БЭМ.</p>
+            </details>
+            <details>
+                <summary>Модуль 2. JavaScript с нуля</summary>
+                <p style="margin-top: var(--space-md); color: var(--color-muted);">Синтаксис, DOM, события, асинхронность (Promises, async/await), работа с API.</p>
+            </details>
+            <details>
+                <summary>Модуль 3. React и экосистема</summary>
+                <p style="margin-top: var(--space-md); color: var(--color-muted);">Компонентный подход, хуки, React Router, управление состоянием (Redux).</p>
+            </details>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 CodeCraft. Учебный проект.</p>
+        </div>
+    </footer>
+</body>
+</html>
