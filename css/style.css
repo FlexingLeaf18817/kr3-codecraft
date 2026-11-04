@@ -327,3 +327,94 @@ details[open] summary::after {
         grid-template-columns: 1fr; /* На мобильных все карточки в один столбец */
     }
 }
+
+/* --- Утилитарные классы (заменяют inline-стили) --- */
+.pt-xl { padding-top: var(--space-xl); }
+.pb-xl { padding-bottom: var(--space-xl); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mt-auto { margin-top: auto; }
+.mt-lg { margin-top: var(--space-lg); }
+.text-center { text-align: center; }
+.text-primary { color: var(--color-primary); }
+.text-muted { color: var(--color-muted); font-size: 0.9rem; }
+.fw-bold { font-weight: bold; }
+
+/* Специфичные классы для страниц */
+.breadcrumbs {
+    margin-bottom: var(--space-md);
+    color: var(--color-muted);
+}
+.breadcrumbs a {
+    color: inherit;
+}
+
+.course-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+.course-hero__col {
+    flex: 1;
+    min-width: 300px;
+}
+.course-hero__img {
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+}
+.course-hero__price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: var(--space-lg);
+    color: var(--color-primary);
+}
+
+.teacher-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.article-meta {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-lg);
+}
+
+.article-img {
+    border-radius: var(--radius);
+    margin-bottom: var(--space-lg);
+}
+
+/* ===================================
+   Заглушка для фото преподавателей/авторов
+   =================================== */
+.teacher-placeholder {
+    width: 100%;
+    height: 200px; 
+    background-color: #e0e0e0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem; 
+    font-weight: bold;
+    color: #888; 
+    /* Убраны border-radius и margin, так как карточка .card сама их задает */
+}
+
+/* Если у тебя есть аватарки в отзывах (например, в блоге) */
+.avatar-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #555;
+    margin-right: var(--space-sm);
+    flex-shrink: 0; 
+}

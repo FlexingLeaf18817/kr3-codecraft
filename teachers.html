@@ -3,69 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Преподаватели онлайн-школы CodeCraft.">
     <title>Преподаватели – CodeCraft</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="site-header__inner">
-            <a href="index.html" class="site-logo">CodeCraft</a>
+            <a class="site-logo" href="index.html">CodeCraft</a>
             <nav aria-label="Основная навигация">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Главная</a></li>
-                    <li><a href="courses.html" class="nav-link">Курсы</a></li>
-                    <li><a href="teachers.html" class="nav-link nav-link--active">Преподаватели</a></li>
-                    <li><a href="blog.html" class="nav-link">Блог</a></li>
+                    <li><a class="nav-link" href="index.html">Главная</a></li>
+                    <li><a class="nav-link" href="courses.html">Курсы</a></li>
+                    <li><a class="nav-link nav-link--active" href="teachers.html">Преподаватели</a></li>
+                    <li><a class="nav-link" href="blog.html">Блог</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container" style="padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
-        <h1 style="margin-bottom: var(--space-lg);">Наши эксперты</h1>
-        
+    <main class="container pt-xl pb-xl">
+        <!-- Заголовок раздела -->
+        <div class="text-center mb-lg">
+            <h1 class="hero__title" style="font-size: 2rem;">Наши преподаватели</h1>
+            <p class="text-muted">Эксперты индустрии, которые помогут вам освоить новую профессию с нуля.</p>
+        </div>
+
+        <!-- Сетка карточек -->
         <div class="grid-4">
-            <article class="card" style="text-align: center;">
-                <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?q=80&w=400&auto=format&fit=crop" alt="Александр Пушкин" class="card__image" style="height: 250px; object-fit: cover;">
+            
+            <!-- Преподаватель 1 -->
+            <article class="card">
+                <div class="teacher-placeholder">А</div>
                 <div class="card__body">
-                    <h3 class="card__title">Александр П.</h3>
-                    <p style="color: var(--color-primary); font-weight: bold; margin-bottom: var(--space-sm);">Senior Frontend</p>
-                    <p class="card__text">10 лет опыта в разработке. Работал в Яндексе и VK.</p>
+                    <h2 class="card__title">Алексей Смирнов</h2>
+                    <p class="fw-bold text-primary mb-sm">Senior Frontend Developer</p>
+                    <p class="card__text">Опыт в разработке 8 лет. Специализируется на React, Vue.js и чистом JavaScript.</p>
                 </div>
             </article>
 
-            <article class="card" style="text-align: center;">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop" alt="Мария Иванова" class="card__image" style="height: 250px; object-fit: cover;">
+            <!-- Преподаватель 2 -->
+            <article class="card">
+                <div class="teacher-placeholder">М</div>
                 <div class="card__body">
-                    <h3 class="card__title">Мария И.</h3>
-                    <p style="color: var(--color-primary); font-weight: bold; margin-bottom: var(--space-sm);">UX/UI Designer</p>
-                    <p class="card__text">Экс-дизайнер в Сбере. Специалист по дизайн-системам.</p>
+                    <h2 class="card__title">Мария Иванова</h2>
+                    <p class="fw-bold text-primary mb-sm">UX/UI Designer</p>
+                    <p class="card__text">Поможет разобраться в Figma, прототипировании и создании удобных интерфейсов.</p>
                 </div>
             </article>
 
-            <article class="card" style="text-align: center;">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" alt="Дмитрий Соколов" class="card__image" style="height: 250px; object-fit: cover;">
+            <!-- Преподаватель 3 -->
+            <article class="card">
+                <div class="teacher-placeholder">Д</div>
                 <div class="card__body">
-                    <h3 class="card__title">Дмитрий С.</h3>
-                    <p style="color: var(--color-primary); font-weight: bold; margin-bottom: var(--space-sm);">Backend Python</p>
-                    <p class="card__text">Архитектор высоконагруженных систем. Ментор.</p>
+                    <h2 class="card__title">Дмитрий Козлов</h2>
+                    <p class="fw-bold text-primary mb-sm">Backend Developer (Python)</p>
+                    <p class="card__text">Разрабатывает высоконагруженные системы. Научит писать чистый код на Python и Django.</p>
                 </div>
             </article>
 
-            <article class="card" style="text-align: center;">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop" alt="Елена Смирнова" class="card__image" style="height: 250px; object-fit: cover;">
+            <!-- Преподаватель 4 -->
+            <article class="card">
+                <div class="teacher-placeholder">Е</div>
                 <div class="card__body">
-                    <h3 class="card__title">Елена С.</h3>
-                    <p style="color: var(--color-primary); font-weight: bold; margin-bottom: var(--space-sm);">Data Scientist</p>
-                    <p class="card__text">Кандидат физ-мат наук. Специалист по нейросетям.</p>
+                    <h2 class="card__title">Елена Петрова</h2>
+                    <p class="fw-bold text-primary mb-sm">HTML/CSS верстальщик</p>
+                    <p class="card__text">Эксперт по адаптивной верстке, доступности (a11y) и методологии БЭМ.</p>
                 </div>
             </article>
+
         </div>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 CodeCraft. Учебный проект.</p>
+            <p>&copy; 2026 CodeCraft. Все права защищены.</p>
+            <p class="text-muted" style="color: #adb5bd; font-size: 0.9rem;">Учебный проект для КР №3.</p>
         </div>
     </footer>
 </body>
