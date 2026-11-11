@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Каталог образовательных программ CodeCraft: frontend, backend, Python, React и UX/UI.">
+  <title>Программы обучения — CodeCraft</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="images/brand-mark.svg" alt="">
+        <span class="brand__name">CodeCraft</span>
+      </a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link is-active" href="courses.html">Программы</a>
+        <a class="nav__link" href="teachers.html">Команда</a>
+        <a class="nav__link" href="blog.html">Журнал</a>
+        <a class="nav__link" href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" aria-label="Переключить тему">☾</button>
+        <a class="button button--small button--primary" href="contacts.html#lead-form">Консультация ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Хлебные крошки">
+    <div class="container breadcrumbs__inner">
+      <a href="index.html">Главная</a>
+      <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+      <span aria-current="page">Программы</span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Каталог обучения / 2026</div>
+        <h1>Программы, которые<br><span>превращают интерес в навык.</span></h1>
+        <p>Выбирай специализацию, изучай подробную программу и собирай портфолио под руководством наставников-практиков.</p>
+        <div class="page-hero__meta">
+          <span>06 направлений</span>
+          <span>От 4 до 9 месяцев</span>
+          <span>Онлайн · с наставником</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container">
+        <div class="catalog-toolbar">
+          <div>
+            <div class="eyebrow">Найди своё направление</div>
+            <h2>Каталог <span>программ.</span></h2>
+          </div>
+          <label class="catalog-sort">Сортировать
+            <select id="course-sort" aria-label="Сортировка программ">
+              <option value="default">По умолчанию</option>
+              <option value="price-asc">Сначала дешевле</option>
+              <option value="price-desc">Сначала дороже</option>
+              <option value="duration-asc">Короткие сначала</option>
+              <option value="name">По названию</option>
+            </select>
+          </label>
+          <div class="filters" role="group" aria-label="Фильтр программ">
+            <button class="filter-chip is-active" data-filter="all">Все программы</button>
+            <button class="filter-chip" data-filter="frontend">Frontend</button>
+            <button class="filter-chip" data-filter="backend">Backend</button>
+            <button class="filter-chip" data-filter="design">Дизайн</button>
+          </div>
+        </div>
+        
+        <div class="course-grid" id="course-grid">
+          <article class="course-card" data-category="frontend">
+            <a class="course-card__image" href="course.html?id=fullstack">
+              <img src="images/Frontend.jpg" alt="Разработка веб-интерфейса">
+              <span class="course-card__tag">Самый полный маршрут</span>
+              <span class="course-card__arrow">↗</span>
+            </a>
+            <div class="course-card__body">
+              <div class="course-meta">
+                <span>FULL STACK</span>
+                <span>8 месяцев</span>
+              </div>
+              <h3><a href="course.html?id=fullstack">Fullstack-разработчик</a></h3>
+              <p>Создавай веб-продукты целиком: от адаптивного интерфейса до API, базы данных и публикации в интернете.</p>
+              <div class="tag-list">
+                <span>HTML · CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+              </div>
+              <div class="course-card__bottom">
+                <div>
+                  <small>Стоимость программы</small>
+                  <strong>от 64 900 ₽</strong>
+                </div>
+                <a href="course.html?id=fullstack" class="round-link" aria-label="Подробнее">↗</a>
+              </div>
+            </div>
+          </article>
+          
+          <article class="course-card" data-category="frontend">
+            <a class="course-card__image" href="course.html?id=frontend">
+              <img src="images/Code on the laptop screen.jpg" alt="Frontend разработка">
+              <span class="course-card__tag">С нуля</span>
+              <span class="course-card__arrow">↗</span>
+            </a>
+            <div class="course-card__body">
+              <div class="course-meta">
+                <span>FRONTEND</span>
+                <span>6 месяцев</span>
+              </div>
+              <h3><a href="course.html?id=frontend">Frontend-разработчик</a></h3>
+              <p>Разрабатывай современные интерфейсы, адаптивные сайты и интерактивные приложения на JavaScript и React.</p>
+              <div class="tag-list">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>React</span>
+              </div>
+              <div class="course-card__bottom">
+                <div>
+                  <small>Стоимость программы</small>
+                  <strong>от 49 900 ₽</strong>
+                </div>
+                <a href="course.html?id=frontend" class="round-link" aria-label="Подробнее">↗</a>
+              </div>
+            </div>
+          </article>
+          
+          <article class="course-card" data-category="backend">
+            <a class="course-card__image" href="course.html?id=backend">
+              <img src="images/Server rack.jpg" alt="Серверная инфраструктура">
+              <span class="course-card__tag">С нуля</span>
+              <span class="course-card__arrow">↗</span>
+            </a>
+            <div class="course-card__body">
+              <div class="course-meta">
+                <span>BACKEND</span>
+                <span>7 месяцев</span>
+              </div>
+              <h3><a href="course.html?id=backend">Backend-разработчик</a></h3>
+              <p>Проектируй серверную архитектуру, создавай REST API, работай с базами данных и безопасностью.</p>
+              <div class="tag-list">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+              </div>
+              <div class="course-card__bottom">
+                <div>
+                  <small>Стоимость программы</small>
+                  <strong>от 54 900 ₽</strong>
+                </div>
+                <a href="course.html?id=backend" class="round-link" aria-label="Подробнее">↗</a>
+              </div>
+            </div>
+          </article>
+          
+          <article class="course-card" data-category="backend">
+            <a class="course-card__image" href="course.html?id=python">
+              <img src="images/Python.jpg" alt="Python программирование">
+              <span class="course-card__tag">Популярное</span>
+              <span class="course-card__arrow">↗</span>
+            </a>
+            <div class="course-card__body">
+              <div class="course-meta">
+                <span>PYTHON</span>
+                <span>7 месяцев</span>
+              </div>
+              <h3><a href="course.html?id=python">Python-разработчик</a></h3>
+              <p>Освой универсальный язык, автоматизируй задачи, создавай backend-сервисы и работай с данными.</p>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>Django</span>
+                <span>SQL</span>
+                <span>REST API</span>
+              </div>
+              <div class="course-card__bottom">
+                <div>
+                  <small>Стоимость программы</small>
+                  <strong>от 52 900 ₽</strong>
+                </div>
+                <a href="course.html?id=python" class="round-link" aria-label="Подробнее">↗</a>
+              </div>
+            </div>
+          </article>
+          
+          <article class="course-card" data-category="frontend">
+            <a class="course-card__image" href="course.html?id=react">
+              <img src="images/Mobile development.jpg" alt="React разработка">
+              <span class="course-card__tag">Для продолжающих</span>
+              <span class="course-card__arrow">↗</span>
+            </a>
+            <div class="course-card__body">
+              <div class="course-meta">
+                <span>REACT</span>
+                <span>4 месяца</span>
+              </div>
+              <h3><a href="course.html?id=react">React-разработчик</a></h3>
+              <p>Углуби знания JavaScript и научись создавать сложные SPA с управлением состоянием и тестами.</p>
+              <div class="tag-list">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Redux</span>
+                <span>Testing</span>
+              </div>
+              <div class="course-card__bottom">
+                <div>
+                  <small>Стоимость программы</small>
+                  <strong>от 39 900 ₽</strong>
+                </div>
+                <a href="course.html?id=react" class="round-link" aria-label="Подробнее">↗</a>
+              </div>
+            </div>
+          </article>
+          
+          <article class="course-card" data-category="design">
+            <a class="course-card__image" href="course.html?id=uxui">
+              <img src="images/Interface design.jpg" alt="UX UI дизайн интерфейсов">
+              <span class="course-card__tag">С нуля</span>
+              <span class="course-card__arrow">↗</span>
+            </a>
+            <div class="course-card__body">
+              <div class="course-meta">
+                <span>PRODUCT DESIGN</span>
+                <span>5 месяцев</span>
+              </div>
+              <h3><a href="course.html?id=uxui">UX/UI-дизайнер</a></h3>
+              <p>Исследуй пользователей, проектируй сценарии, собирай дизайн-системы и передавай макеты разработчикам.</p>
+              <div class="tag-list">
+                <span>Figma</span>
+                <span>UX Research</span>
+                <span>UI</span>
+                <span>Prototyping</span>
+              </div>
+              <div class="course-card__bottom">
+                <div>
+                  <small>Стоимость программы</small>
+                  <strong>от 44 900 ₽</strong>
+                </div>
+                <a href="course.html?id=uxui" class="round-link" aria-label="Подробнее">↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+        <div class="catalog-note">
+          <span class="help-mark" title="Нужна помощь с выбором?">?</span>
+          <p>Не уверен, какое направление выбрать? Мы поможем определить стартовый уровень и подобрать программу под твою цель.</p>
+          <a class="text-link" href="contacts.html#lead-form">Получить помощь ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container split-cta">
+        <div>
+          <div class="eyebrow eyebrow--light">Не знаешь, с чего начать?</div>
+          <h2>Подберём маршрут<br><span>вместе.</span></h2>
+        </div>
+        <div>
+          <p>Оставь заявку на вводную консультацию. Обсудим твой опыт, цели и свободное время — без обязательств покупать курс.</p>
+          <a class="button button--light" href="contacts.html#lead-form">Записаться на консультацию ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <img alt="" class="brand__mark" src="images/brand-mark.svg">
+          <span class="brand__name">CodeCraft</span>
+        </a>
+        <p>Школа практической разработки.<br>Учимся создавать продукты, а не просто писать код.</p>
+      </div>
+      <div class="footer__col">
+        <b>Обучение</b>
+        <a href="courses.html">Все программы</a>
+        <a href="teachers.html">Наставники</a>
+        <a href="blog.html">Журнал</a>
+      </div>
+      <div class="footer__col">
+        <b>Компания</b>
+        <a href="contacts.html">Контакты</a>
+        <a href="contacts.html#lead-form">Консультация</a>
+        <a href="contacts.html#faq">Вопросы и ответы</a>
+      </div>
+      <div class="footer__contact">
+        <b>Связаться с нами</b>
+        <a class="footer-contact-link" href="tel:+78005550142">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 3h4l2 5-2.5 1.5a15 15 0 0 0 6 6L16 13l5 2v4c0 1.1-.9 2-2 2C10 21 3 14 3 5c0-1.1.9-2 2-2Z"/>
+          </svg>
+          <span>8 800 555-01-42</span>
+        </a>
+        <a class="footer-contact-link" href="mailto:hello@codecraft.ru">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m4 7 8 6 8-6"/>
+          </svg>
+          <span>hello@codecraft.ru</span>
+        </a>
+        <span class="footer-hours">Отвечаем Пн–Пт, 10:00–19:00 МСК</span>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 CodeCraft. Все права защищены.</span>
+      <span>Образовательная платформа в сфере IT.</span>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <button class="back-top" aria-label="Наверх" title="Наверх">
+    <span class="back-top__target" aria-hidden="true"></span>
+  </button>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <meta content="Познакомьтесь с преподавателями и наставниками CodeCraft — практикующими инженерами и дизайнерами." name="description" />
+  <title>Наставники — CodeCraft</title>
+  
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <img alt="" class="brand__mark" src="images/brand-mark.svg" />
+        <span class="brand__name">CodeCraft</span>
+      </a>
+      <button aria-expanded="false" aria-label="Открыть меню" class="menu-toggle">☰</button>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link" href="courses.html">Программы</a>
+        <a class="nav__link is-active" href="teachers.html">Команда</a>
+        <a class="nav__link" href="blog.html">Журнал</a>
+        <a class="nav__link" href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <button aria-label="Переключить тему" class="theme-toggle">☾</button>
+        <a class="button button--small button--primary" href="contacts.html#lead-form">Консультация ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Хлебные крошки">
+    <div class="container breadcrumbs__inner">
+      <a href="index.html">Главная</a>
+      <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+      <span aria-current="page">Команда</span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Люди CodeCraft / 20</div>
+        <h1>Сильные специалисты.<br/><span>Внимательные наставники.</span></h1>
+        <p>Наставники CodeCraft помогают освоить технологии через реальные инженерные задачи, командную практику и разбор решений.</p>
+        <div class="page-hero__meta">
+          <span>20 наставников</span>
+          <span>Разработка · Дизайн · Карьера</span>
+          <span>Практический опыт</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container">
+        <div class="team-intro">
+          <div>
+            <div class="eyebrow">Команда наставников</div>
+            <h2>Те, кто рядом<br/><span>на каждом этапе.</span></h2>
+          </div>
+          <p>На занятиях можно задавать вопросы, показывать незаконченный код и разбирать ошибки. Наставник помогает выстроить собственный способ решения задач.</p>
+        </div>
+        
+        <div class="teacher-grid">
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Алексей Смирнов, наставник по frontend-разработке" src="images/alexey-smirnov.jpg" />
+              <span>01 / FRONTEND</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Алексей Смирнов</h3>
+              <p class="teacher-role">Lead Frontend Engineer</p>
+              <p>Помогает разобраться в JavaScript, архитектуре React-приложений и доступности интерфейсов. На занятиях уделяет внимание качеству компонентов и читаемости кода.</p>
+              <div class="teacher-tags">
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>TypeScript</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Мария Иванова, наставник по UX UI дизайну" src="images/maria-ivanova.jpg" />
+              <span>02 / DESIGN</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Мария Иванова</h3>
+              <p class="teacher-role">Senior Product Designer</p>
+              <p>Учит проводить исследования, проектировать пользовательские сценарии и собирать дизайн-системы, которые помогают продукту расти.</p>
+              <div class="teacher-tags">
+                <span>Figma</span>
+                <span>UX Research</span>
+                <span>Design Systems</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Дмитрий Козлов, наставник по backend-разработке" src="images/dmitry-kozlov.jpg" />
+              <span>03 / BACKEND</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Дмитрий Козлов</h3>
+              <p class="teacher-role">Backend Engineer</p>
+              <p>Объясняет устройство серверных приложений, проектирование API, работу с SQL и базовые принципы безопасности веб-сервисов.</p>
+              <div class="teacher-tags">
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Елена Петрова, наставник по Python" src="images/elena-petrova.jpg" />
+              <span>04 / PYTHON</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Елена Петрова</h3>
+              <p class="teacher-role">Python Developer</p>
+              <p>Показывает, как писать поддерживаемый Python-код, строить backend на Django и автоматизировать повторяющиеся процессы.</p>
+              <div class="teacher-tags">
+                <span>Python</span>
+                <span>Django</span>
+                <span>REST API</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Максим Орлов, наставник по JavaScript" src="images/maxim-orlov.jpg" />
+              <span>05 / JAVASCRIPT</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Максим Орлов</h3>
+              <p class="teacher-role">Fullstack Developer</p>
+              <p>Разбирает интеграцию клиентской и серверной частей, работу с асинхронностью, авторизацией и внешними API.</p>
+              <div class="teacher-tags">
+                <span>JavaScript</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Анна Соколова, наставник по тестированию" src="images/anna-sokolova.jpg" />
+              <span>06 / QA</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Анна Соколова</h3>
+              <p class="teacher-role">QA Automation Engineer</p>
+              <p>Учит тестировать пользовательские сценарии, находить граничные случаи и автоматизировать проверки веб-приложений.</p>
+              <div class="teacher-tags">
+                <span>Playwright</span>
+                <span>API Testing</span>
+                <span>QA</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Кирилл Волков, наставник по DevOps" src="images/kirill-volkov.jpg" />
+              <span>07 / DEVOPS</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Кирилл Волков</h3>
+              <p class="teacher-role">DevOps Engineer</p>
+              <p>Знакомит с Git, Linux, контейнеризацией и CI/CD, помогает довести приложение до рабочего развёртывания.</p>
+              <div class="teacher-tags">
+                <span>Linux</span>
+                <span>Docker</span>
+                <span>CI/CD</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="София Лебедева, карьерный наставник" src="images/sofia-lebedeva.jpg" />
+              <span>08 / CAREER</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>София Лебедева</h3>
+              <p class="teacher-role">IT Career Mentor</p>
+              <p>Помогает упаковать опыт в портфолио, подготовиться к техническим интервью и объяснять свои решения работодателю.</p>
+              <div class="teacher-tags">
+                <span>Portfolio</span>
+                <span>Interview</span>
+                <span>Career</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Никита Беляев" src="images/mentor-01.jpg" />
+              <span>09 / CLOUD</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Никита Беляев</h3>
+              <p class="teacher-role">Cloud Solutions Engineer</p>
+              <p>Объясняет инфраструктуру через схемы и лабораторные задания.</p>
+              <div class="teacher-tags">
+                <span>Cloud</span>
+                <span>AWS</span>
+                <span>Linux</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Полина Сергеева" src="images/mentor-02.jpg" />
+              <span>10 / DATA</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Полина Сергеева</h3>
+              <p class="teacher-role">Data Analyst</p>
+              <p>Учит проверять гипотезы и ясно представлять выводы на основе данных.</p>
+              <div class="teacher-tags">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Pandas</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Артём Громов" src="images/mentor-03.jpg" />
+              <span>11 / JAVA</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Артём Громов</h3>
+              <p class="teacher-role">Java Engineer</p>
+              <p>Разбирает архитектуру на примерах, уделяет внимание API, тестам и сопровождаемости.</p>
+              <div class="teacher-tags">
+                <span>Java</span>
+                <span>Spring</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Виктория Орлова" src="images/mentor-04.jpg" />
+              <span>12 / PRODUCT</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Виктория Орлова</h3>
+              <p class="teacher-role">Product Designer</p>
+              <p>Помогает аргументировать визуальные решения исследованиями и прототипами.</p>
+              <div class="teacher-tags">
+                <span>Figma</span>
+                <span>UX Research</span>
+                <span>UI</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Роман Захаров" src="images/mentor-05.jpg" />
+              <span>13 / SECURITY</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Роман Захаров</h3>
+              <p class="teacher-role">Security Engineer</p>
+              <p>Показывает угрозы на учебных стендах и учит учитывать безопасность при проектировании.</p>
+              <div class="teacher-tags">
+                <span>OWASP</span>
+                <span>Linux</span>
+                <span>AppSec</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Дарья Волкова" src="images/mentor-06.jpg" />
+              <span>14 / MOBILE</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Дарья Волкова</h3>
+              <p class="teacher-role">Mobile Developer</p>
+              <p>Строит обучение от пользовательского сценария к интерфейсу и состояниям приложения.</p>
+              <div class="teacher-tags">
+                <span>Kotlin</span>
+                <span>Android</span>
+                <span>REST</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Игорь Фомин" src="images/mentor-07.jpg" />
+              <span>15 / QA LEAD</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Игорь Фомин</h3>
+              <p class="teacher-role">QA Lead</p>
+              <p>Учит проектировать тесты от рисков и поведения пользователя.</p>
+              <div class="teacher-tags">
+                <span>Playwright</span>
+                <span>Cypress</span>
+                <span>API</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Алина Миронова" src="images/mentor-08.jpg" />
+              <span>16 / CAREER</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Алина Миронова</h3>
+              <p class="teacher-role">Career Coach</p>
+              <p>Помогает переводить практический опыт в понятные кейсы и готовиться к собеседованиям.</p>
+              <div class="teacher-tags">
+                <span>CV</span>
+                <span>Interview</span>
+                <span>Portfolio</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Ирина Крылова" src="images/mentor-10.jpg" />
+              <span>17 / DATA ENGINEERING</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Ирина Крылова</h3>
+              <p class="teacher-role">Data Engineer</p>
+              <p>Помогает выстраивать надёжные потоки данных, проектировать хранилища и превращать разрозненные источники в понятную аналитическую основу.</p>
+              <div class="teacher-tags">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Airflow</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Павел Нестеров" src="images/mentor-09.jpg" />
+              <span>18 / ANALYTICS</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Павел Нестеров</h3>
+              <p class="teacher-role">Product Analyst</p>
+              <p>Учит формулировать продуктовые гипотезы, выбирать метрики и проверять решения на данных, а не на интуиции.</p>
+              <div class="teacher-tags">
+                <span>SQL</span>
+                <span>A/B Testing</span>
+                <span>Metabase</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Михаил Гусев" src="images/mentor-11.jpg" />
+              <span>19 / MOBILE</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Михаил Гусев</h3>
+              <p class="teacher-role">Mobile Developer</p>
+              <p>Разбирает архитектуру мобильных приложений, управление состоянием, интеграцию с API и подготовку приложения к публикации.</p>
+              <div class="teacher-tags">
+                <span>Kotlin</span>
+                <span>Android</span>
+                <span>REST API</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+          
+          <article aria-haspopup="dialog" class="teacher-card" data-teacher-profile="" role="button" tabindex="0">
+            <div class="teacher-card__photo">
+              <img alt="Портрет наставника Анастасия Белова" src="images/mentor-12.jpg" />
+              <span>20 / UX RESEARCH</span>
+            </div>
+            <div class="teacher-card__body">
+              <h3>Анастасия Белова</h3>
+              <p class="teacher-role">UX Researcher</p>
+              <p>Показывает, как проводить интервью, наблюдать за поведением пользователей и превращать исследовательские выводы в продуктовые решения.</p>
+              <div class="teacher-tags">
+                <span>UX Research</span>
+                <span>Figma</span>
+                <span>Prototyping</span>
+              </div>
+              <div class="teacher-exp">
+                <b>Практика</b>
+                <small>проектная разработка</small>
+              </div>
+              <button class="teacher-more" type="button">Подробнее о наставнике <span>↗</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container split-cta">
+        <div>
+          <div class="eyebrow eyebrow--light">Наставник рядом</div>
+          <h2>Не оставайся<br/><span>один на один с кодом.</span></h2>
+        </div>
+        <div>
+          <p>Расскажи, чему хочешь научиться — подскажем, кто из команды ведёт подходящую программу.</p>
+          <a class="button button--light" href="contacts.html#lead-form">Подобрать наставника ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <img alt="" class="brand__mark" src="images/brand-mark.svg">
+          <span class="brand__name">CodeCraft</span>
+        </a>
+        <p>Школа практической разработки.<br>Учимся создавать продукты, а не просто писать код.</p>
+      </div>
+      <div class="footer__col">
+        <b>Обучение</b>
+        <a href="courses.html">Все программы</a>
+        <a href="teachers.html">Наставники</a>
+        <a href="blog.html">Журнал</a>
+      </div>
+      <div class="footer__col">
+        <b>Компания</b>
+        <a href="contacts.html">Контакты</a>
+        <a href="contacts.html#lead-form">Консультация</a>
+        <a href="contacts.html#faq">Вопросы и ответы</a>
+      </div>
+      <div class="footer__contact">
+        <b>Связаться с нами</b>
+        <a class="footer-contact-link" href="tel:+78005550142">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 3h4l2 5-2.5 1.5a15 15 0 0 0 6 6L16 13l5 2v4c0 1.1-.9 2-2 2C10 21 3 14 3 5c0-1.1.9-2 2-2Z"/>
+          </svg>
+          <span>8 800 555-01-42</span>
+        </a>
+        <a class="footer-contact-link" href="mailto:hello@codecraft.ru">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m4 7 8 6 8-6"/>
+          </svg>
+          <span>hello@codecraft.ru</span>
+        </a>
+        <span class="footer-hours">Отвечаем Пн–Пт, 10:00–19:00 МСК</span>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 CodeCraft. Все права защищены.</span>
+      <span>Образовательная платформа в сфере IT.</span>
+    </div>
+  </footer>
+
+  <dialog aria-labelledby="teacher-modal-name" class="teacher-modal" id="teacher-modal">
+    <button aria-label="Закрыть" class="modal__close" data-close-teacher="" type="button">×</button>
+    <div id="teacher-modal-content"></div>
+  </dialog>
+
+  <div aria-live="polite" class="toast" role="status"></div>
+  <button aria-label="Наверх" class="back-top">↑</button>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Журнал CodeCraft: инженерные практики, карьера разработчика, дизайн и обучение.">
+  <title>Журнал — CodeCraft</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="images/brand-mark.svg" alt="">
+        <span class="brand__name">CodeCraft</span>
+      </a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link" href="courses.html">Программы</a>
+        <a class="nav__link" href="teachers.html">Команда</a>
+        <a class="nav__link is-active" href="blog.html">Журнал</a>
+        <a class="nav__link" href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" aria-label="Переключить тему">☾</button>
+        <a class="button button--small button--primary" href="contacts.html#lead-form">Консультация ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Хлебные крошки">
+    <div class="container breadcrumbs__inner">
+      <a href="index.html">Главная</a>
+      <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+      <span aria-current="page">Журнал</span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">CodeCraft journal / идеи и практика</div>
+        <h1>Заметки о том,<br><span>как создаётся цифровое.</span></h1>
+        <p>Материалы от наставников школы: разбираем технологии, инженерное мышление и карьеру в разработке.</p>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container">
+        <article class="featured-article">
+          <a class="featured-article__image" href="article.html?id=junior">
+            <img src="images/Junior.jpg" alt="Разработчик работает над проектом за ноутбуком">
+          </a>
+          <div class="featured-article__body">
+            <div class="article-meta">
+              <span>КАРЬЕРА</span>
+              <span>5 МИН</span>
+            </div>
+            <h2><a href="article.html?id=junior">Как перейти от учебных задач к первому коммерческому проекту</a></h2>
+            <p>Разбираем, почему одного сертификата недостаточно, какие проекты стоит положить в портфолио и как показать ход инженерной мысли на собеседовании.</p>
+            <a class="text-link" href="article.html?id=junior">Читать материал <span>↗</span></a>
+          </div>
+        </article>
+        
+        <div class="section-heading section-heading--small">
+          <div>
+            <div class="eyebrow">Библиотека знаний</div>
+            <h2>Свежие <span>материалы.</span></h2>
+          </div>
+          <div class="filters">
+            <button class="filter-chip is-active" data-article-filter="all">Все темы</button>
+            <button class="filter-chip" data-article-filter="dev">Разработка</button>
+            <button class="filter-chip" data-article-filter="career">Карьера</button>
+            <button class="filter-chip" data-article-filter="design">Дизайн</button>
+          </div>
+        </div>
+        
+        <div class="article-grid">
+          <article class="article-card" data-topic="dev">
+            <a href="article.html?id=frontend" class="article-card__image">
+              <img src="images/Errors.jpg" alt="Код на экране редактора">
+            </a>
+            <div class="article-card__body">
+              <div class="article-meta">
+                <span>РАЗРАБОТКА</span>
+                <span>6 МИН</span>
+              </div>
+              <h3><a href="article.html?id=frontend">Пять привычек, которые делают frontend-код поддерживаемым</a></h3>
+              <p>Компоненты, семантика, состояния и небольшие решения, которые экономят время всей команды.</p>
+              <a class="text-link" href="article.html?id=frontend">Читать <span>↗</span></a>
+            </div>
+          </article>
+          
+          <article class="article-card" data-topic="design">
+            <a href="article.html?id=design" class="article-card__image">
+              <img src="images/Interface design.jpg" alt="Работа над интерфейсом">
+            </a>
+            <div class="article-card__body">
+              <div class="article-meta">
+                <span>ДИЗАЙН</span>
+                <span>7 МИН</span>
+              </div>
+              <h3><a href="article.html?id=design">Дизайн-система для небольшого продукта: с чего начать</a></h3>
+              <p>Как договориться о цветах, типографике, отступах и компонентах до того, как интерфейс разрастётся.</p>
+              <a class="text-link" href="article.html?id=design">Читать <span>↗</span></a>
+            </div>
+          </article>
+          
+          <article class="article-card" data-topic="career">
+            <a href="article.html?id=soft" class="article-card__image">
+              <img src="images/Soft.jpg" alt="Командная работа разработчиков">
+            </a>
+            <div class="article-card__body">
+              <div class="article-meta">
+                <span>КАРЬЕРА</span>
+                <span>6 МИН</span>
+              </div>
+              <h3><a href="article.html?id=soft">Soft skills разработчика: как давать и принимать code review</a></h3>
+              <p>Техническая коммуникация — часть профессии. Показываем, как обсуждать решения предметно и уважительно.</p>
+              <a class="text-link" href="article.html?id=soft">Читать <span>↗</span></a>
+            </div>
+          </article>
+          
+          <article class="article-card" data-topic="dev">
+            <a href="article.html?id=api" class="article-card__image">
+              <img src="images/Server rack.jpg" alt="Серверная инфраструктура">
+            </a>
+            <div class="article-card__body">
+              <div class="article-meta">
+                <span>BACKEND</span>
+                <span>8 МИН</span>
+              </div>
+              <h3><a href="article.html?id=api">REST API без магии: как клиент общается с сервером</a></h3>
+              <p>Методы HTTP, статусы ответов, JSON и обработка ошибок на понятных примерах.</p>
+              <a class="text-link" href="article.html?id=api">Читать <span>↗</span></a>
+            </div>
+          </article>
+          
+          <article class="article-card" data-topic="career">
+            <a href="article.html?id=github" class="article-card__image">
+              <img src="images/Code on the laptop screen.jpg" alt="Ноутбук с кодом">
+            </a>
+            <div class="article-card__body">
+              <div class="article-meta">
+                <span>КАРЬЕРА</span>
+                <span>7 МИН</span>
+              </div>
+              <h3><a href="article.html?id=github">GitHub-портфолио: как оформить проекты, чтобы их открывали</a></h3>
+              <p>README, демо, скриншоты и история коммитов: что помогает ревьюеру быстро понять твой вклад.</p>
+              <a class="text-link" href="article.html?id=github">Читать <span>↗</span></a>
+            </div>
+          </article>
+          
+          <article class="article-card" data-topic="dev">
+            <a href="article.html?id=python" class="article-card__image">
+              <img src="images/Python.jpg" alt="Работа с Python">
+            </a>
+            <div class="article-card__body">
+              <div class="article-meta">
+                <span>PYTHON</span>
+                <span>5 МИН</span>
+              </div>
+              <h3><a href="article.html?id=python">Первый backend на Python: что происходит после запроса</a></h3>
+              <p>Маршруты, обработчики, модели данных и база — разбираем путь запроса от браузера до ответа.</p>
+              <a class="text-link" href="article.html?id=python">Читать <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <img alt="" class="brand__mark" src="images/brand-mark.svg">
+          <span class="brand__name">CodeCraft</span>
+        </a>
+        <p>Школа практической разработки.<br>Учимся создавать продукты, а не просто писать код.</p>
+      </div>
+      <div class="footer__col">
+        <b>Обучение</b>
+        <a href="courses.html">Все программы</a>
+        <a href="teachers.html">Наставники</a>
+        <a href="blog.html">Журнал</a>
+      </div>
+      <div class="footer__col">
+        <b>Компания</b>
+        <a href="contacts.html">Контакты</a>
+        <a href="contacts.html#lead-form">Консультация</a>
+        <a href="contacts.html#faq">Вопросы и ответы</a>
+      </div>
+      <div class="footer__contact">
+        <b>Связаться с нами</b>
+        <a class="footer-contact-link" href="tel:+78005550142">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 3h4l2 5-2.5 1.5a15 15 0 0 0 6 6L16 13l5 2v4c0 1.1-.9 2-2 2C10 21 3 14 3 5c0-1.1.9-2 2-2Z"/>
+          </svg>
+          <span>8 800 555-01-42</span>
+        </a>
+        <a class="footer-contact-link" href="mailto:hello@codecraft.ru">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m4 7 8 6 8-6"/>
+          </svg>
+          <span>hello@codecraft.ru</span>
+        </a>
+        <span class="footer-hours">Отвечаем Пн–Пт, 10:00–19:00 МСК</span>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 CodeCraft. Все права защищены.</span>
+      <span>Образовательная платформа в сфере IT.</span>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <button class="back-top" aria-label="Наверх" title="Наверх">
+    <span class="back-top__target" aria-hidden="true"></span>
+  </button>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

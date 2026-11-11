@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CodeCraft — практическая школа разработки. Освойте frontend, backend и Python на проектах из реальной практики.">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>CodeCraft — создавай цифровое будущее</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="CodeCraft — главная">
+        <img class="brand__mark" src="images/brand-mark.svg" alt="">
+        <span class="brand__name">CodeCraft</span>
+      </a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link is-active" href="index.html">Главная</a>
+        <a class="nav__link" href="courses.html">Программы</a>
+        <a class="nav__link" href="teachers.html">Команда</a>
+        <a class="nav__link" href="blog.html">Журнал</a>
+        <a class="nav__link" href="contacts.html">Контакты</a>
+      </nav>
+      
+      <div class="header__actions">
+        <button class="theme-toggle" aria-label="Переключить тему" title="Переключить тему">☾</button>
+        <a class="button button--small button--primary" href="contacts.html#lead-form">Обсудить обучение <span>↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="eyebrow">
+            <span class="eyebrow__dot"></span> Онлайн-школа практической разработки
+          </div>
+          
+          <h1>Не просто учись кодить.<br><span>Создавай то, чем будут пользоваться.</span></h1>
+          
+          <p class="hero__lead">Освой востребованный стек технологий, собери портфолио из реальных проектов и подготовься к первой работе в IT вместе с практикующими разработчиками.</p>
+          
+          <div class="hero__buttons">
+            <a class="button button--primary" href="courses.html">Выбрать программу <span>↗</span></a>
+            <a class="button button--ghost" href="#approach">Как мы обучаем <span>↓</span></a>
+          </div>
+          
+          <div class="hero__proof">
+            <div class="proof-avatars">
+              <img src="images/alexey-smirnov.jpg" alt="">
+              <img src="images/maria-ivanova.jpg" alt="">
+              <img src="images/dmitry-kozlov.jpg" alt="">
+            </div>
+            <div>
+              <strong>Наставники-практики</strong>
+              <small>Разбирают твой код, а не только теорию</small>
+            </div>
+            <div class="proof-divider"></div>
+            <div>
+              <strong>От идеи до деплоя</strong>
+              <small>Проекты в твоём портфолио</small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero__visual">
+          <div class="hero-photo">
+            <img src="images/Code on the laptop screen.jpg" alt="Рабочее место разработчика с кодом на экране">
+            <div class="photo-tag"><span class="status-dot"></span> Учимся на практике</div>
+          </div>
+          
+          <div class="floating-card floating-card--top" tabindex="0" role="group" aria-label="Подсказка о выборе направления">
+            <span class="floating-icon">⌘</span>
+            <div>
+              <b>Твой следующий шаг</b>
+              <small>Fullstack-разработчик</small>
+            </div>
+            <span class="floating-arrow">↗</span>
+            <span class="floating-tooltip">Это пример одного из маршрутов, а не обязательный выбор. Fullstack подойдёт тем, кто хочет освоить и интерфейс, и серверную часть. Можно выбрать Python, frontend или дизайн — программа подбирается под цель и стартовый уровень.</span>
+          </div>
+          
+          <div class="floating-card floating-card--bottom" tabindex="0" role="group" aria-label="Подсказка о портфолио">
+            <div class="mini-bars">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div>
+              <b>Портфолио растёт</b>
+              <small>Каждый модуль — проект</small>
+            </div>
+            <span class="floating-tooltip">По ходу обучения ты соберёшь несколько законченных работ: адаптивный сайт, приложение с API и итоговый проект. Для каждого кейса можно оформить описание задачи, используемые технологии, скриншоты и ссылку на работающую демонстрацию.</span>
+          </div>
+          
+          <div class="hero-orbit hero-orbit--one"></div>
+          <div class="hero-orbit hero-orbit--two"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--stats" aria-label="CodeCraft в цифрах">
+      <div class="container stats-grid">
+        <div class="stat">
+          <span class="stat__label">НАСТАВНИКИ</span>
+          <strong><span class="counter-value" data-count="20" data-decimals="0">0</span><span>+</span></strong>
+          <span class="stat__description">практикующих специалистов в команде</span>
+        </div>
+        <div class="stat">
+          <span class="stat__label">ПРОЕКТНАЯ ПРАКТИКА</span>
+          <strong><span class="counter-value" data-count="12" data-decimals="0">0</span></strong>
+          <span class="stat__description">проектов для закрепления навыков</span>
+        </div>
+        <div class="stat">
+          <span class="stat__label">ОЦЕНКА ЗАНЯТИЙ</span>
+          <strong><span class="counter-value" data-count="4.9" data-decimals="1">0.0</span><span>/5</span></strong>
+          <span class="stat__description">средняя оценка по отзывам учеников</span>
+        </div>
+        <div class="stat">
+          <span class="stat__label">ФОРМАТ ПОДДЕРЖКИ</span>
+          <strong>1:1</strong>
+          <span class="stat__description">персональный разбор и обратная связь по коду</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="container">
+        <div class="section-heading section-heading--stacked">
+          <div>
+            <div class="eyebrow">Наш подход</div>
+            <h2>Навыки, которые <span>можно показать.</span></h2>
+          </div>
+          <p>Мы строим обучение вокруг практики: от первой строки кода до приложения, которое можно открыть по ссылке и добавить в портфолио.</p>
+        </div>
+        
+        <div class="feature-grid">
+          <article class="feature-card feature-card--dark" tabindex="0" aria-label="Реальные проекты. Наведи курсор или перейди клавишей Tab для подробностей">
+            <div class="feature-card__top">
+              <span class="feature-number">01 / PRACTICE</span>
+              <span class="feature-symbol">↗</span>
+            </div>
+            <div class="feature-illustration lifecycle-illustration" role="img" aria-label="Цикл разработки: анализ, проектирование, разработка, тестирование и поддержка. В центре build.">
+              <svg viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <marker id="flow-arrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+                    <path d="M0 0 6 3 0 6" fill="none" stroke="#9d9aff" stroke-width="1.3"/>
+                  </marker>
+                </defs>
+                <g fill="none" stroke="#817cf5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+                  <path d="M280 47 H465 Q480 47 480 62 V88" marker-end="url(#flow-arrow)"/>
+                  <path d="M480 162 V188 Q480 203 465 203 H360" marker-end="url(#flow-arrow)"/>
+                  <path d="M200 203 H95 Q80 203 80 188 V162" marker-end="url(#flow-arrow)"/>
+                  <path d="M80 88 V62 Q80 47 95 47 H200" marker-end="url(#flow-arrow)"/>
+                </g>
+                <g fill="#252d49" font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+                  <rect x="205" y="15" width="150" height="48" rx="12" fill="#5148e8"/>
+                  <text x="280" y="44" fill="#fff">Анализ задачи</text>
+                  <rect x="400" y="88" width="145" height="48" rx="12" fill="#5148e8"/>
+                  <text x="472" y="117" fill="#fff">Проектирование</text>
+                  <rect x="205" y="179" width="150" height="48" rx="12" fill="#5148e8"/>
+                  <text x="280" y="208" fill="#fff">Тестирование</text>
+                  <rect x="15" y="88" width="145" height="48" rx="12" fill="#5148e8"/>
+                  <text x="87" y="117" fill="#fff">Поддержка</text>
+                </g>
+                <rect x="203" y="91" width="154" height="68" rx="17" fill="#18263a" stroke="#5148e8" stroke-width="2"/>
+                <text x="280" y="132" fill="#fff" font-family="monospace" font-size="23" font-weight="700" text-anchor="middle">&lt;build /&gt;</text>
+                <circle cx="280" cy="125" r="91" fill="none" stroke="#9b96ff" stroke-width="1" stroke-dasharray="3 7" opacity=".45"/>
+              </svg>
+            </div>
+            <h3>Реальные проекты</h3>
+            <p>Интернет-магазин, сервис с API, личный кабинет и финальный командный проект — вместо набора несвязанных упражнений.</p>
+            <div class="feature-tooltip" role="tooltip">Ты проходишь полный цикл: формулируешь задачу, составляешь план, выбираешь инструменты, пишешь код, проверяешь результат и оформляешь проект. В портфолио остаётся не учебный фрагмент, а законченная работа с понятной целью и описанием твоего вклада.</div>
+          </article>
+          
+          <article class="feature-card" tabindex="0" aria-label="Карточка навыка. Наведи курсор или перейди клавишей Tab для подробностей">
+            <div class="feature-card__top">
+              <span class="feature-number">02 / FEEDBACK</span>
+              <span class="feature-symbol">↗</span>
+            </div>
+            <div class="feature-illustration feedback-illustration" title="Форма отправки кода наставнику и пример обратной связи.">
+              <div class="feedback-form-visual">
+                <div class="feedback-form-head">
+                  <b>Отправить на проверку</b>
+                  <span>● На связи</span>
+                </div>
+                <label>Название проекта</label>
+                <div class="feedback-field">Интернет-магазин на React</div>
+                <label>Ссылка на репозиторий</label>
+                <div class="feedback-field">github.com/username/project</div>
+                <label>Комментарий для наставника</label>
+                <div class="feedback-field feedback-field--message">Проверьте структуру компонентов и обработку ошибок…</div>
+                <div class="feedback-form-bottom">
+                  <span>Ответ обычно в течение 1 дня</span>
+                  <b>Отправить запрос ↗</b>
+                </div>
+              </div>
+            </div>
+            <h3>Обратная связь от инженеров</h3>
+            <p>Наставник проверяет архитектуру, читаемость и качество кода, объясняет ошибки и помогает расти системно.</p>
+            <div class="feature-tooltip" role="tooltip">Ты получаешь комментарии к конкретным решениям: где компонент перегружен, как обработать ошибку, что улучшить в запросе или структуре данных. Разбираем не только что исправить, но и почему это важно, чтобы постепенно ты мог самостоятельно проводить code review.</div>
+          </article>
+          
+          <article class="feature-card" tabindex="0" aria-label="Карточка навыка. Наведи курсор или перейди клавишей Tab для подробностей">
+            <div class="feature-card__top">
+              <span class="feature-number">03 / CAREER</span>
+              <span class="feature-symbol">↗</span>
+            </div>
+            <div class="feature-illustration career-illustration" title="Профиль кандидата с фотографией и готовым портфолио.">
+              <img class="career-person" src="images/mentor-02.jpg" alt="Портрет участницы программы CodeCraft">
+              <div class="career-profile">
+                <span class="career-kicker">ПРОФИЛЬ КАНДИДАТА</span>
+                <b>CC Portfolio ready</b>
+                <span>Проекты · GitHub · Резюме</span>
+                <i>Готово к собеседованию ✓</i>
+              </div>
+            </div>
+            <h3>Подготовка к рынку</h3>
+            <p>Оформим GitHub, разберём техническое интервью, научимся презентовать решения и составим план поиска работы.</p>
+            <div class="feature-tooltip" role="tooltip">Помогаем выбрать проекты для GitHub, написать содержательные README, подготовить резюме и рассказ о своём опыте. На тренировочном интервью разбираем технические вопросы и учимся спокойно объяснять ход мысли. Это подготовка и поддержка, а не обещание гарантированного трудоустройства.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Направления</div>
+            <h2>Выбери свою<br><span>траекторию.</span></h2>
+          </div>
+          <a class="text-link" href="courses.html">Все программы <span>↗</span></a>
+        </div>
+        
+        <div class="program-grid">
+          <a class="program-card program-card--wide" href="course.html?id=fullstack">
+            <img src="images/Frontend.jpg" alt="Разработка интерфейсов">
+            <div class="program-card__overlay"></div>
+            <div class="program-card__content">
+              <span class="program-label">01 / FULL STACK</span>
+              <h3>Fullstack-разработка</h3>
+              <p>От интерфейса до серверной логики и базы данных.</p>
+              <span class="program-link">Изучить программу ↗</span>
+            </div>
+          </a>
+          <a class="program-card" href="course.html?id=python">
+            <img src="images/Python.jpg" alt="Python-разработка">
+            <div class="program-card__overlay"></div>
+            <div class="program-card__content">
+              <span class="program-label">02 / BACKEND</span>
+              <h3>Python-разработка</h3>
+              <p>Сервисы, API и автоматизация.</p>
+              <span class="program-link">Изучить программу ↗</span>
+            </div>
+          </a>
+          <a class="program-card" href="course.html?id=uxui">
+            <img src="images/Web_design.jpg" alt="Дизайн интерфейсов">
+            <div class="program-card__overlay"></div>
+            <div class="program-card__content">
+              <span class="program-label">03 / DESIGN</span>
+              <h3>UX/UI-дизайн</h3>
+              <p>Интерфейсы, которыми удобно пользоваться.</p>
+              <span class="program-link">Изучить программу ↗</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Маршрут обучения</div>
+            <h2>Понятный путь<br><span>к результату.</span></h2>
+          </div>
+          <p>Ты всегда понимаешь, что изучаешь сейчас, зачем это нужно и какой следующий шаг ждёт впереди.</p>
+        </div>
+        
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-illustration">
+              <svg viewBox="0 0 96 70" aria-hidden="true">
+                <rect x="19" y="8" width="58" height="50" rx="9" fill="#eeedff" stroke="#655cf0" stroke-width="2"/>
+                <circle cx="48" cy="26" r="9" fill="#655cf0"/>
+                <path d="M31 48c2-9 10-13 17-13s15 4 17 13" fill="none" stroke="#655cf0" stroke-width="3" stroke-linecap="round"/>
+                <path d="M70 12l8-7M73 22h12" stroke="#19b889" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Старт и диагностика</h3>
+            <p>Определяем текущий уровень, цель и подходящий темп. Составляем персональный план.</p>
+            <div class="step-line"></div>
+          </article>
+          <article class="step-card">
+            <div class="step-illustration">
+              <svg viewBox="0 0 96 70" aria-hidden="true">
+                <path d="M15 13h66v45H15z" rx="7" fill="#eeedff" stroke="#655cf0" stroke-width="2"/>
+                <path d="M24 24h27M24 33h47M24 42h36" stroke="#655cf0" stroke-width="3" stroke-linecap="round"/>
+                <path d="m61 49 6 6 13-15" fill="none" stroke="#19b889" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Фундамент</h3>
+            <p>Разбираем базовые концепции и закрепляем их небольшими практическими задачами.</p>
+            <div class="step-line"></div>
+          </article>
+          <article class="step-card">
+            <div class="step-illustration">
+              <svg viewBox="0 0 96 70" aria-hidden="true">
+                <rect x="10" y="11" width="76" height="49" rx="8" fill="#17283d"/>
+                <path d="m22 27 7 6-7 6M36 39h16" stroke="#8be4bf" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="69" cy="27" r="8" fill="#655cf0"/>
+                <path d="M62 48h15" stroke="#8be4bf" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Проектная практика</h3>
+            <p>Создаём полноценные приложения, работаем с Git, API, тестированием и командой.</p>
+            <div class="step-line"></div>
+          </article>
+          <article class="step-card">
+            <div class="step-illustration">
+              <svg viewBox="0 0 96 70" aria-hidden="true">
+                <rect x="17" y="8" width="62" height="53" rx="8" fill="#eeedff" stroke="#655cf0" stroke-width="2"/>
+                <circle cx="48" cy="26" r="10" fill="#655cf0"/>
+                <path d="M29 51c3-10 10-15 19-15s16 5 19 15" fill="#b7b2ff"/>
+                <path d="m66 13 5 5 9-10" stroke="#19b889" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Портфолио и карьера</h3>
+            <p>Защищаем итоговый проект, оформляем кейсы и тренируемся проходить интервью.</p>
+            <div class="step-line"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container mentor-band">
+        <div class="mentor-band__copy">
+          <div class="eyebrow eyebrow--light">Люди, которые помогают расти</div>
+          <h2>Учись у тех,<br>кто <span>создаёт.</span></h2>
+          <p>Наши наставники — разработчики, дизайнеры и тимлиды. Они делятся рабочими практиками и помогают пройти путь от учебной задачи до инженерного мышления.</p>
+          <a class="button button--light" href="teachers.html">Познакомиться с командой ↗</a>
+        </div>
+        <div class="mentor-collage">
+          <img src="images/alexey-smirnov.jpg" alt="Наставник CodeCraft">
+          <img src="images/maria-ivanova.jpg" alt="Наставник CodeCraft">
+          <img src="images/dmitry-kozlov.jpg" alt="Наставник CodeCraft">
+          <img src="images/elena-petrova.jpg" alt="Наставник CodeCraft">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Частые вопросы</div>
+            <h2>Перед стартом —<br><span>по делу.</span></h2>
+          </div>
+          <p>Не нашли ответ? Напишите нам — поможем подобрать программу под вашу цель и текущий уровень.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Нужно ли уметь программировать до начала обучения?<span>＋</span></summary>
+            <p>Нет. Для программ начального уровня достаточно уверенно пользоваться компьютером и быть готовым регулярно практиковаться. Мы начнём с основ и постепенно перейдём к инструментам выбранного направления. Если ты уже знаком с программированием, на консультации обсудим твой опыт и подскажем, с какого модуля лучше стартовать. Для продвинутых программ заранее перечислены необходимые знания; при необходимости можно пройти входную диагностику.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Сколько времени нужно уделять занятиям?<span>＋</span></summary>
+            <p>Ориентир зависит от программы и указан на её странице. В общее время входят занятия с наставником, самостоятельная практика, выполнение заданий и работа над проектом. Лучше заниматься несколько раз в неделю небольшими блоками: так проще закреплять материал и вовремя задавать вопросы. Если график меняется, заранее обсуди с наставником темп и план выполнения заданий.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Будет ли у меня портфолио после курса?<span>＋</span></summary>
+            <p>Да. В зависимости от направления это будут практические задания и несколько законченных проектов: например, адаптивный сайт, приложение с внешним API, интерфейс в Figma или backend-сервис. Итоговую работу ты оформишь как кейс: опишешь задачу, свою роль, выбор технологий, основные решения и результат, добавишь скриншоты и ссылку на репозиторий или демонстрацию. Состав портфолио зависит от выбранной программы и твоего темпа.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Вы гарантируете трудоустройство?<span>＋</span></summary>
+            <p>Нет. Решение о найме всегда принимает работодатель, поэтому честно обещать конкретную должность или срок было бы неправильно. Со своей стороны мы помогаем подготовить резюме и портфолио, потренировать техническое интервью, разобрать типовые тестовые задания и научиться рассказывать о проектах. Также помогаем составить реалистичный план поиска вакансий и дальнейшего развития.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container cta-panel">
+        <div>
+          <div class="eyebrow eyebrow--light">Следующий шаг начинается здесь</div>
+          <h2>Создай свой<br>первый <span>большой проект.</span></h2>
+          <p>Расскажи, к чему хочешь прийти. Подберём программу и покажем, как будет устроено обучение.</p>
+        </div>
+        <a class="button button--light" href="contacts.html#lead-form">Получить консультацию <span>↗</span></a>
+        <div class="cta-orbit"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <img alt="" class="brand__mark" src="images/brand-mark.svg">
+          <span class="brand__name">CodeCraft</span>
+        </a>
+        <p>Школа практической разработки.<br>Учимся создавать продукты, а не просто писать код.</p>
+      </div>
+      <div class="footer__col">
+        <b>Обучение</b>
+        <a href="courses.html">Все программы</a>
+        <a href="teachers.html">Наставники</a>
+        <a href="blog.html">Журнал</a>
+      </div>
+      <div class="footer__col">
+        <b>Компания</b>
+        <a href="contacts.html">Контакты</a>
+        <a href="contacts.html#lead-form">Консультация</a>
+        <a href="contacts.html#faq">Вопросы и ответы</a>
+      </div>
+      <div class="footer__contact">
+        <b>Связаться с нами</b>
+        <a class="footer-contact-link" href="tel:+78005550142">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 3h4l2 5-2.5 1.5a15 15 0 0 0 6 6L16 13l5 2v4c0 1.1-.9 2-2 2C10 21 3 14 3 5c0-1.1.9-2 2-2Z"/>
+          </svg>
+          <span>8 800 555-01-42</span>
+        </a>
+        <a class="footer-contact-link" href="mailto:hello@codecraft.ru">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m4 7 8 6 8-6"/>
+          </svg>
+          <span>hello@codecraft.ru</span>
+        </a>
+        <span class="footer-hours">Отвечаем Пн–Пт, 10:00–19:00 МСК</span>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 CodeCraft. Все права защищены.</span>
+      <span>Образовательная платформа в сфере IT.</span>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <button class="back-top" aria-label="Наверх" title="Наверх">
+    <span class="back-top__target" aria-hidden="true"></span>
+  </button>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

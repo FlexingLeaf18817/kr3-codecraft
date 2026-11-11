@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Свяжитесь с CodeCraft: консультация по программам обучения, вопросы и обратная связь.">
+  <title>Контакты — CodeCraft</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="images/brand-mark.svg" alt="">
+        <span class="brand__name">CodeCraft</span>
+      </a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link" href="courses.html">Программы</a>
+        <a class="nav__link" href="teachers.html">Команда</a>
+        <a class="nav__link" href="blog.html">Журнал</a>
+        <a class="nav__link is-active" href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" aria-label="Переключить тему">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Хлебные крошки">
+    <div class="container breadcrumbs__inner">
+      <a href="index.html">Главная</a>
+      <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+      <span aria-current="page">Контакты</span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Мы на связи</div>
+        <h1>Давай обсудим<br><span>твой следующий шаг.</span></h1>
+        <p>Поможем выбрать направление, расскажем о формате занятий и подскажем, с чего лучше начать.</p>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <div class="eyebrow">Контактная информация</div>
+          <h2>Связаться<br><span>с CodeCraft.</span></h2>
+          <p>Оставь заявку или напиши нам удобным способом. Обычно отвечаем в течение одного рабочего дня.</p>
+          <a class="contact-method" href="mailto:hello@codecraft.ru">
+            <span class="contact-method__icon">✉</span>
+            <span>
+              <small>Электронная почта</small>
+              <b>hello@codecraft.ru</b>
+            </span>
+            <span class="contact-method__arrow">↗</span>
+          </a>
+          <a class="contact-method" href="tel:+78005550142">
+            <span class="contact-method__icon">⌕</span>
+            <span>
+              <small>Телефон учебного отдела</small>
+              <b>8 800 555-01-42</b>
+            </span>
+            <span class="contact-method__arrow">↗</span>
+          </a>
+          <div class="contact-hours">
+            <span class="status-dot"></span>
+            <div>
+              <b>Учебный отдел на связи</b>
+              <small>Понедельник — пятница, 10:00–19:00 МСК</small>
+            </div>
+          </div>
+          <div class="contact-visual">
+            <img src="images/Interface design.jpg" alt="Рабочее пространство команды CodeCraft">
+            <span>LEARN · BUILD · GROW</span>
+          </div>
+        </div>
+        
+        <div class="form-panel" id="lead-form">
+          <div class="form-panel__head">
+            <span class="eyebrow">Заявка на консультацию</span>
+            <span class="form-step">01 — 01</span>
+          </div>
+          <h2>Расскажи о своей<br><span>цели.</span></h2>
+          <p>Мы свяжемся с тобой и поможем подобрать подходящую программу.</p>
+          <form class="lead-form" data-api-form="contact">
+            <div class="form-row">
+              <label>Имя
+                <input name="name" required minlength="2" autocomplete="name" placeholder="Например, Алексей">
+              </label>
+              <label>Email
+                <input name="email" type="email" required autocomplete="email" placeholder="name@example.com">
+              </label>
+            </div>
+            <div class="form-row">
+              <label>Телефон
+                <input name="phone" type="tel" required autocomplete="tel" inputmode="tel" maxlength="18" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" title="Введите 10 цифр номера после +7" placeholder="+7 (___) ___-__-__" value="+7 ">
+              </label>
+              <label>Интересующее направление
+                <select name="courseId" required>
+                  <option value="">Пока не определился</option>
+                  <option value="fullstack">Fullstack-разработка</option>
+                  <option value="frontend">Frontend</option>
+                  <option value="backend">Backend</option>
+                  <option value="python">Python</option>
+                  <option value="react">React</option>
+                  <option value="uxui">UX/UI-дизайн</option>
+                </select>
+              </label>
+            </div>
+            <label>Что хочешь узнать?
+              <textarea name="message" rows="4" placeholder="Расскажи о своём опыте и целях..."></textarea>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" required> Я согласен на обработку персональных данных
+            </label>
+            <button class="button button--primary button--block" type="submit">Отправить заявку <span>↗</span></button>
+            <p class="form-message" aria-live="polite"></p>
+            <small class="form-legal">Нажимая кнопку, ты подтверждаешь согласие с условиями обработки персональных данных.</small>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">FAQ</div>
+            <h2>Есть вопросы?<br><span>У нас есть ответы.</span></h2>
+          </div>
+          <p>Если не нашли нужную информацию — воспользуйтесь формой выше.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Консультация платная?<span>＋</span></summary>
+            <p>Нет, первая консультация бесплатная. На ней мы уточним твой опыт, интересы и цель, расскажем о подходящих программах, нагрузке, формате занятий и стоимости. После разговора ты сможешь спокойно принять решение — записываться на обучение необязательно.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Можно ли учиться параллельно с работой?<span>＋</span></summary>
+            <p>Да. Большинство занятий и практических заданий можно планировать вокруг работы или учёбы. Для каждой программы указан ориентир по часам в неделю; на консультации мы разберём расписание, дедлайны и объём самостоятельной практики. Важно выделять время регулярно, чтобы не накапливать задания и получать пользу от обратной связи наставника.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Как проходит оплата?<span>＋</span></summary>
+            <p>Стоимость зависит от выбранной программы и указана на её странице. До начала обучения мы объясняем, что входит в стоимость, какие есть способы оплаты и доступна ли оплата частями для конкретного курса. Никаких скрытых обязательных платежей: все условия согласуются заранее.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <img alt="" class="brand__mark" src="images/brand-mark.svg">
+          <span class="brand__name">CodeCraft</span>
+        </a>
+        <p>Школа практической разработки.<br>Учимся создавать продукты, а не просто писать код.</p>
+      </div>
+      <div class="footer__col">
+        <b>Обучение</b>
+        <a href="courses.html">Все программы</a>
+        <a href="teachers.html">Наставники</a>
+        <a href="blog.html">Журнал</a>
+      </div>
+      <div class="footer__col">
+        <b>Компания</b>
+        <a href="contacts.html">Контакты</a>
+        <a href="contacts.html#lead-form">Консультация</a>
+        <a href="contacts.html#faq">Вопросы и ответы</a>
+      </div>
+      <div class="footer__contact">
+        <b>Связаться с нами</b>
+        <a class="footer-contact-link" href="tel:+78005550142">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 3h4l2 5-2.5 1.5a15 15 0 0 0 6 6L16 13l5 2v4c0 1.1-.9 2-2 2C10 21 3 14 3 5c0-1.1.9-2 2-2Z"/>
+          </svg>
+          <span>8 800 555-01-42</span>
+        </a>
+        <a class="footer-contact-link" href="mailto:hello@codecraft.ru">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m4 7 8 6 8-6"/>
+          </svg>
+          <span>hello@codecraft.ru</span>
+        </a>
+        <span class="footer-hours">Отвечаем Пн–Пт, 10:00–19:00 МСК</span>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 CodeCraft. Все права защищены.</span>
+      <span>Образовательная платформа в сфере IT.</span>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <button class="back-top" aria-label="Наверх" title="Наверх">
+    <span class="back-top__target" aria-hidden="true"></span>
+  </button>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

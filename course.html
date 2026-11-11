@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Подробная программа обучения CodeCraft: навыки, учебный план, проекты и формат занятий.">
+  <title>Программа обучения — CodeCraft</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="images/brand-mark.svg" alt="">
+        <span class="brand__name">CodeCraft</span>
+      </a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link is-active" href="courses.html">Программы</a>
+        <a class="nav__link" href="teachers.html">Команда</a>
+        <a class="nav__link" href="blog.html">Журнал</a>
+        <a class="nav__link" href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" aria-label="Переключить тему">☾</button>
+        <a class="button button--small button--primary" href="contacts.html#lead-form">Консультация ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Хлебные крошки">
+    <div class="container breadcrumbs__inner">
+      <a href="index.html">Главная</a>
+      <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+      <a href="courses.html">Программы</a>
+      <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+      <span aria-current="page">Программа обучения</span>
+    </div>
+  </nav>
+
+  <main id="course-detail">
+    <section class="page-hero page-hero--course">
+      <div class="container">
+        <a class="back-link" href="courses.html">← Все программы</a>
+        <div id="course-content" class="course-detail-loading">
+          <div class="eyebrow">Программа CodeCraft</div>
+          <h1>Загружаем программу…</h1>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <img alt="" class="brand__mark" src="images/brand-mark.svg">
+          <span class="brand__name">CodeCraft</span>
+        </a>
+        <p>Школа практической разработки.<br>Учимся создавать продукты, а не просто писать код.</p>
+      </div>
+      <div class="footer__col">
+        <b>Обучение</b>
+        <a href="courses.html">Все программы</a>
+        <a href="teachers.html">Наставники</a>
+        <a href="blog.html">Журнал</a>
+      </div>
+      <div class="footer__col">
+        <b>Компания</b>
+        <a href="contacts.html">Контакты</a>
+        <a href="contacts.html#lead-form">Консультация</a>
+        <a href="contacts.html#faq">Вопросы и ответы</a>
+      </div>
+      <div class="footer__contact">
+        <b>Связаться с нами</b>
+        <a class="footer-contact-link" href="tel:+78005550142">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 3h4l2 5-2.5 1.5a15 15 0 0 0 6 6L16 13l5 2v4c0 1.1-.9 2-2 2C10 21 3 14 3 5c0-1.1.9-2 2-2Z"/>
+          </svg>
+          <span>8 800 555-01-42</span>
+        </a>
+        <a class="footer-contact-link" href="mailto:hello@codecraft.ru">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m4 7 8 6 8-6"/>
+          </svg>
+          <span>hello@codecraft.ru</span>
+        </a>
+        <span class="footer-hours">Отвечаем Пн–Пт, 10:00–19:00 МСК</span>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 CodeCraft. Все права защищены.</span>
+      <span>Образовательная платформа в сфере IT.</span>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="enroll-modal">
+    <button class="modal__close" data-close-modal aria-label="Закрыть">×</button>
+    <div class="eyebrow">Заявка на обучение</div>
+    <h2>Давай обсудим<br><span>твой старт.</span></h2>
+    <p>Оставь контакты — координатор свяжется с тобой и ответит на вопросы.</p>
+    <form class="lead-form" data-api-form="enrollment">
+      <input type="hidden" name="courseId" id="enroll-course-id">
+      <label>Имя
+        <input name="name" autocomplete="name" required minlength="2" placeholder="Как к тебе обращаться">
+      </label>
+      <label>Телефон
+        <input name="phone" type="tel" autocomplete="tel" required placeholder="+7 900 000-00-00">
+      </label>
+      <label>Email
+        <input name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" required> Согласен на обработку персональных данных
+      </label>
+      <button class="button button--primary button--block" type="submit">Отправить заявку ↗</button>
+      <p class="form-message" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <button class="back-top" aria-label="Наверх" title="Наверх">
+    <span class="back-top__target" aria-hidden="true"></span>
+  </button>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
